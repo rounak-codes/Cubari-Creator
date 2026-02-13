@@ -1,5 +1,3 @@
----
-
 # 📚 Cubari Creator
 
 A fully automated Python toolchain to:
