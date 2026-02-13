@@ -4,13 +4,13 @@
 
 A fully automated Python toolchain to:
 
-* ✅ Upload manga/comic chapters to **Catbox**
-* ✅ Generate Cubari-compatible JSON
-* ✅ Resume uploads without reuploading old pages
-* ✅ Convert `.avif` → `.webp` automatically
-* ✅ Create CBZ files for every chapter
-* ✅ Merge multiple CBZs into a single anthology
-* ✅ Regenerate `upload_record.json` from an existing Cubari project
+✅ Upload manga/comic chapters to **Catbox**
+✅ Generate Cubari-compatible JSON
+✅ Resume uploads without reuploading old pages
+✅ Convert `.avif` → `.webp` automatically
+✅ Create CBZ files for every chapter
+✅ Merge multiple CBZs into a single anthology
+✅ Regenerate `upload_record.json` from an existing Cubari project
 
 Built for scanlators, archivists, and Cubari users.
 
@@ -20,15 +20,15 @@ Built for scanlators, archivists, and Cubari users.
 
 ## 🔹 Smart Uploading
 
-* Uploads images to `catbox.moe`
-* Retries automatically on failure
-* Skips already uploaded images
-* Supports resume via `upload_record.json`
+Uploads images to `catbox.moe`
+Retries automatically on failure
+Skips already uploaded images
+Supports resume via `upload_record.json`
 
 ## 🔹 AVIF Support
 
-* Converts `.avif` → `.webp`
-* Removes original AVIF safely
+Converts `.avif` → `.webp`
+Removes original AVIF safely
 
 ## 🔹 Cubari JSON Generator
 
@@ -115,15 +115,15 @@ python script.py
 
 ### You Will Be Asked:
 
-* Title name
-* Uploader name (group name)
-* Description
-* Artist
-* Author
-* Cover image URL (Catbox link)
-* Status (Ongoing / Completed)
-* Base folder path
-* Existing cubari.json path (optional)
+Title name
+Uploader name (group name)
+Description
+Artist
+Author
+Cover image URL (Catbox link)
+Status (Ongoing / Completed)
+Base folder path
+Existing cubari.json path (optional)
 
 ---
 
@@ -131,13 +131,13 @@ python script.py
 
 For each chapter:
 
-* Sorts images naturally (1,2,3...10 correctly)
-* Converts `.avif` → `.webp`
-* Uploads new images only
-* Reuses existing URLs if found
-* Creates chapter CBZ
-* Updates `upload_record.json`
-* Builds final Cubari JSON
+Sorts images naturally (1,2,3...10 correctly)
+Converts `.avif` → `.webp`
+Uploads new images only
+Reuses existing URLs if found
+Creates chapter CBZ
+Updates `upload_record.json`
+Builds final Cubari JSON
 
 ---
 
@@ -155,9 +155,9 @@ CBZ_Files/*.cbz
 
 If:
 
-* You lost `upload_record.json`
-* You already have Cubari JSON
-* You want to sync local files with Cubari URLs
+You lost `upload_record.json`
+You already have Cubari JSON
+You want to sync local files with Cubari URLs
 
 Use:
 
@@ -171,15 +171,15 @@ python update.py
 
 ### You Will Be Asked:
 
-* Path to cubari.json
-* Base folder path
+Path to cubari.json
+Base folder path
 
 ### What It Does:
 
-* Reads Cubari JSON
-* Matches folders to chapter titles
-* Maps image index → Cubari URL
-* Generates fresh `upload_record.json`
+Reads Cubari JSON
+Matches folders to chapter titles
+Maps image index → Cubari URL
+Generates fresh `upload_record.json`
 
 ---
 
@@ -228,12 +228,12 @@ The system prevents reuploads by:
   ```
   upload_record.json
   ```
-* Reusing existing Cubari URLs
-* Matching by:
+Reusing existing Cubari URLs
+Matching by:
 
-  * Chapter title
-  * Chapter index
-  * Relative image path
+  Chapter title
+  Chapter index
+  Relative image path
 
 You can stop anytime and rerun safely.
 
@@ -253,10 +253,10 @@ You can stop anytime and rerun safely.
 
 # ⚠ Notes
 
-* Catbox has rate limits — tool retries automatically.
-* AVIF conversion requires Pillow compiled with AVIF support.
-* Chapter folder names must match Cubari titles.
-* Natural sorting ensures:
+Catbox has rate limits — tool retries automatically.
+AVIF conversion requires Pillow compiled with AVIF support.
+Chapter folder names must match Cubari titles.
+Natural sorting ensures:
 
   ```
   1.jpg, 2.jpg, 10.jpg
